@@ -1,0 +1,9 @@
+    <h1>People</h1>
+    <% @person.each do |feature| %>
+    <div>
+      <h3>First Name: <%=feature[:firstName] %></h3>
+      <p>Last Name:  <%= feature[:lastName] %></p>
+      <p>Age: <%= feature[:age] %></p>
+      <p>E-mail: <%= feature[:e_mail] %></p>
+    </div>
+    <% end %>
